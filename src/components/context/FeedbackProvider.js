@@ -16,7 +16,7 @@ export const FeedbackRating = ({ children }) => {
   //fetch data from server
   const fetchData = async () => {
     const response = await fetch(`/feedback`);
-    const data = await response.json();
+    const data = response.json();
     setFeedback(data);
     setLoading(false);
   };
